@@ -45,49 +45,49 @@ img = uint8(img);
 switch format
 case 'bmp'
     % 24 bits, no commpression
-    if is_matlab || is_octave
+    if is_matlab
         imwrite(img,filename,'bmp');
-    elseif is_freemat
+    elseif is_octave || is_freemat
         imwrite(img, [filename,'.bmp']);
     end
 
 case 'jpeg'
     % 8 bits
-    if is_matlab || is_octave
+    if is_matlab
         imwrite(img,filename,'jpg','Quality',100);
-    elseif is_freemat
+    elseif is_octave || is_freemat
         imwrite(img, [filename,'.jpg']);
     end
 
 case 'jpg'
     % 8 bits
-    if is_matlab || is_octave
+    if is_matlab
         imwrite(img,filename,'jpg','Quality',100);
-    elseif is_freemat
+    elseif is_octave || is_freemat
         imwrite(img, [filename,'.jpg']);
     end
 
 case 'png'
     % 24 bits
-    if is_matlab || is_octave
+    if is_matlab
         imwrite(img,filename,'png','BitDepth',16);
-    elseif is_freemat
+    elseif is_octave || is_freemat
         imwrite(img, [filename,'.png']);
     end
 
 case 'tiff'
     % 24 bits
-    if is_matlab || is_octave
+    if is_matlab
         imwrite(img,filename,'tif','Compression','packbits');
-    elseif is_freemat
+    elseif is_octave || is_freemat
         imwrite(img, [filename,'.tif']);
     end
 
 case 'tif'
     % 24 bits
-    if is_matlab || is_octave
+    if is_matlab
         imwrite(img,filename,'tif','Compression','packbits');
-    elseif is_freemat
+    elseif is_octave || is_freemat
         imwrite(img, [filename,'.tif']);
     end
 
