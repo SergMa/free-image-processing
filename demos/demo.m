@@ -28,12 +28,18 @@ rgb = load_image('../samples/lena.bmp','rgb');
 %rgb = load_image('../samples/lena.jpg','file');
 
 img = rgb;
-img = convert_rgb_to_bw(rgb);
+%img = convert_rgb_to_bw(rgb);
+
+%img2 = fliplr_image(img);
+img2 = flipud_image(img);
 
 %bw = sum(img,3)/3;
 
 figure(1);
 show_image(img);
+
+figure(2);
+show_image(img2);
 
 %figure(2);
 %image_hist(bw,50,'all');
@@ -41,8 +47,8 @@ show_image(img);
 %figure(3);
 %image_hist(img,50,'i');
 
-save_image(img,'tmp','bmp');
-save_image(img,'tmp','jpg');
-save_image(img,'tmp','png');
-save_image(img,'tmp','tif');
+%save_image(img,'tmp','bmp');
+%save_image(img,'tmp','jpg');
+%save_image(img,'tmp','png');
+%save_image(img,'tmp','tif');
 
