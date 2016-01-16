@@ -1,0 +1,40 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Image Processing Functions                                               %
+%     for MATLAB/Octave/FreeMat                                                %
+%                                                                              %
+%     (c) Sergei Mashkin, 2015                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+TODO List
+
+Image file I/O functions:
+    load_image
+    save_image
+
+Image show functions:
+    show_image
+
+Histogramms functions:
+    image_to_hist
+    show_hist
+
+Image color space conversions:
+    convert_rgb_to_bw
+    convert_rgb_to_cmy
+    convert_rgb_to_cmyk
+    convert_rgb_to_hsi
+    convert_rgb_to_hsv
+    convert_rgb_to_yuv
+    convert_rgb_to_lab
+    convert_rgb_to_xyz
+    
+    convert_bw_to_rgb
+    convert_cmy_to_rgb
+    convert_cmyk_to_rgb
+    convert_hsi_to_rgb
+    convert_hsv_to_rgb
+    convert_yuv_to_rgb
+    convert_lab_to_rgb
+    convert_xyz_to_rgb
+    
+    
