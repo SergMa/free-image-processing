@@ -1,15 +1,13 @@
-% SYNTAX:
+% Syntax:
 %   [out] = bw_rotate( in, angle )
 %   [out] = bw_rotate( in, angle, method )
-% DESCRIPTION:
-%   Rotate bw-image. Background will be filled with black color.
-% INPUTS:
+%
+% Rotate bw-image. Background will be filled with black color
+%
 %   in    - bw-image to rotate: [H x W] matrix of double: [0..1].
 %   angle - angle of rotation, graduses
 %           or: '0','90'/'-270','180'/'-180','270'/'-90','360'/'-360'
 %   method - method of interpolation: 'nearest','bilinear','spline','bicubic'(default)
-% OUTPUTS:
-%   out - rotated bw-image
 
 function [out] = bw_rotate(in,angle,varargin)
 
@@ -25,16 +23,31 @@ end
 % Rotate image
 if isa(angle,'char')
     switch(angle)
-    case {'0','360','-360'}
+    case '0'
         out = in;
         return;
-    case {'90','-270'}
+    case '360'
+        out = in;
+        return;
+    case '-360'
+        out = in;
+        return;
+    case '90'
         out = rot90(in);
         return;
-    case {'180','-180'}
+    case '-270'
+        out = rot90(in);
+        return;
+    case '180'
         out = rot90(in,2);
         return;
-    case {'270','-90'}
+    case '-180'
+        out = rot90(in,2);
+        return;
+    case '270'
+        out = rot90(in,3);
+        return;
+    case '-90'
         out = rot90(in,3);
         return;
     otherwise
@@ -118,9 +131,6 @@ elseif isa(angle,'double')
     end
 
 else
-
     error('Invalid ANGLE');
-
 end
-
 return

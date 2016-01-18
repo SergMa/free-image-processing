@@ -1,12 +1,12 @@
-% SYNTAX:
+% Syntax:
 %   [out] = bw_conv_filter( in, mask, origin );
-% DESCRIPTION:
+% Description:
 %   Convolution filter (without mask normalization)
-% INPUTS:
+% Inputs:
 %   in     - bw-image        - matrix [H x W], double
 %   mask   - mask of filter  - matrix [HM x WM], double
 %   origin - center of mask  - vector [1 x 2] = { row,col }
-% OUTPUTS:
+% Outputs:
 %   out    - output bw-image - matrix [H x W], double
 
 function [ out ] = bw_conv_filter( in, mask, origin )

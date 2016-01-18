@@ -1,14 +1,12 @@
-% SYNTAX:
+% Syntax:
 %   [out] = bw_fliplr(in)
-% DESCRIPTION:
+% Description:
 %   Flip bw-image up-down
-% INPUTS:
+% Inputs:
 %   in  - bw-image to flip;
-% OUTPUTS:
+% Outputs:
 %   out - flipped bw-image.
 
 function [out] = bw_flipup(in)
-
 out = flipud(in);
-
 return

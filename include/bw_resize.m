@@ -1,17 +1,17 @@
-% SYNTAX:
+% Syntax:
 %   [out] = bw_resize( in, scale )
 %   [out] = bw_resize( in, scale, method )
 %   [out] = bw_resize( in, yscale, xscale )
 %   [out] = bw_resize( in, yscale, xscale, method )
-% DESCRIPTION:
+% Description:
 %   Resize bw-image.
-% INPUTS:
+% Inputs:
 %   img    - bw-image to resize
 %   scale  - scale over Y,X axes
 %   yscale - scale over Y axis
 %   xscale - scale over X axis
 %   method - method of interpolation: 'nearest','bilinear','spline','bicubic'(default)
-% OUTPUTS:
+% Outputs:
 %   out - resized bw-image.
 
 function [out] = bw_resize(in,scale,varargin)

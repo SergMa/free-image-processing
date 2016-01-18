@@ -9,6 +9,6 @@
 % Outputs:
 %   out   - output bw-image - matrix [H x W], double
 
-function [ out ] = bw_linear( in, k )
+function [ out ] = bw_linear( in, k, b )
 out = k*in + b;
 return
