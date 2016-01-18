@@ -41,12 +41,13 @@ figure(3);
 %bw2 = bw_resize(bw,1.3,1.3,'nearest');
 %bw2 = bw_resize(bw,0.3,0.3,'bicubic');
 %bw2 = bw_rotate(bw,'-90');
-bw2 = bw_rotate(bw,45);
+%bw2 = bw_rotate(bw,45);
 %bw2 = bw_brightness(bw,-50);
 %bw2 = bw_contrast(bw,3);
 %bw2 = bw_linear(bw,2,-128);
 %bw2 = bw_gamma(bw,1.5);
 %bw2 = bw_limit(bw);
+bw2 = bw_negative(bw);
 bw_show(bw2,'grey');
 
 
