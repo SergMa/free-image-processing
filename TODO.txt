@@ -17,6 +17,7 @@ Image show functions:
 Histogramms functions:
     image_to_hist
     show_hist
+    compare_hist
 
 Image color space conversions:
     convert_rgb_to_bw
@@ -37,4 +38,55 @@ Image color space conversions:
     convert_lab_to_rgb
     convert_xyz_to_rgb
     
+Image geometrical transformations:
+    image_fliplr
+    image_flipud
+    image_resize
+    image_rotate
+    image_superresolution
+
+Image draw utilites:
+    draw_line
+    draw_polyline
+    draw_circle
+    draw_text
     
+Image cut/selection utilites:
+    image_selection
+    image_copy
+    image_crop
+    image_extract_line
+
+Image single-pixel filters
+    image_brightness
+    image_contrast
+    image_levels
+    image_histeq
+    image_autolevels
+    image_autobrigtness
+    image_autocontrast
+    image_threshold
+    image_posterization
+    
+Gradient filters:
+    flt_roberts
+    flt_prewitt
+    flt_sobel
+    flt_scharr
+    flt_canny
+    
+Morphological filters:
+    flt_close
+    flt_open
+    flt_dilation
+    flt_erosion
+    flt_sceleton
+
+Distance transform
+    distance_transform
+    
+Feature points detectors:
+
+
+Recognitions:
+    recogn_
