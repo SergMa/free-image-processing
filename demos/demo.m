@@ -23,6 +23,29 @@ else
     error('Unknown environment');
 end
 
+%test for _conv2()
+Y = [1 2 3;
+     4 5 6;
+     7 8 9];
+X = [1 2 3 4 5;
+     3 4 5 6 7];
+
+%X = rand(2,3);
+%Y = rand(5,4);
+
+X
+Y
+Z = conv2(X,Y,'same');
+Z2 = my_conv2(X,Y);
+Z
+Z2
+
+%diff = max(max(abs(Z-Z2)));
+%diff
+
+
+break;
+
 %rgb = load_image('../samples/lena.bmp','rgb');
 %rgb = load_image('../samples/lena_bw.jpg','rgb');
 %rgb = load_image('../samples/lena.jpg','file');
