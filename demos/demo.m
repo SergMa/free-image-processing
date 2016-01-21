@@ -50,6 +50,7 @@ end
 %rgb = load_image('../samples/lena.jpg','file');
 
 bw = load_image('../samples/lena_bw_pepper.jpg','bw');
+bw = load_image('../samples/lena_bw_low_contrast.jpg','bw');
 
 figure(1);
 show_image(bw);
@@ -70,7 +71,9 @@ figure(3);
 %bw2 = bw_gamma(bw,1.5);
 %bw2 = bw_limit(bw);
 %bw2 = bw_negative(bw);
-bw2 = bw_median(bw, 5);
+%bw2 = bw_median(bw, 5);
+bw2 = bw_autocontrast(bw);
+bw2 = bw_autocontrast_highlow(bw,40);
 bw_show(bw2,'grey');
 
 
