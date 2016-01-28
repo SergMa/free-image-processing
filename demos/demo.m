@@ -49,8 +49,9 @@ end
 %rgb = load_image('../samples/lena_bw.jpg','rgb');
 %rgb = load_image('../samples/lena.jpg','file');
 
-bw = load_image('../samples/lena_bw_pepper.jpg','bw');
-bw = load_image('../samples/lena_bw_low_contrast.jpg','bw');
+bw = load_image('../samples/lena_bw.jpg','bw');
+%bw = load_image('../samples/lena_bw_pepper.jpg','bw');
+%bw = load_image('../samples/lena_bw_low_contrast.jpg','bw');
 
 figure(1);
 show_image(bw);
@@ -72,8 +73,13 @@ figure(3);
 %bw2 = bw_limit(bw);
 %bw2 = bw_negative(bw);
 %bw2 = bw_median(bw, 5);
-bw2 = bw_autocontrast(bw);
-bw2 = bw_autocontrast_highlow(bw,40);
+%bw2 = bw_autocontrast(bw);
+%bw2 = bw_autocontrast_highlow(bw,40);
+
+%bw2 = bw_threshold( bw, 128 );
+%bw2 = bw_threshold( bw, 128, 100, 200 );
+bw2 = bw_solarize( bw );
+%bw2 = bw_solarize( bw, 1 );
 bw_show(bw2,'grey');
 
 

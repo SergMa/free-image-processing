@@ -1,8 +1,9 @@
 % Syntax:
-%   [out] = bw_limit( in );
-%   [out] = bw_limit( in, min, max );
+%   [out] = bw_saturate( in );
+%   [out] = bw_saturate( in, min, max );
 % Description:
 %   Limit intensity range into [min..max]
+%   Identical to bw_limit
 % Inputs:
 %   in  - bw-image - matrix [H x W], double
 %   min - minimal intensity - double (default is 0)
@@ -10,7 +11,7 @@
 % Outputs:
 %   out   - output bw-image - matrix [H x W], double
 
-function [ out ] = bw_limit( in, varargin )
+function [ out ] = bw_saturate( in, varargin )
 
 %Check input arguments
 if nargin==1
